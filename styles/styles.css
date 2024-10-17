@@ -1,0 +1,283 @@
+:root {
+    --primary-color: black;
+    --secondary-color: #f09e36;
+    --basic-color: white;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #556a4b;
+    padding: 15px 30px;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+header h1 {
+    color: white;
+    font-size: 25px;
+}
+
+.top-header ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex: 0 0 50%;
+    justify-content: space-evenly;
+}
+
+.top-header ul li {
+    margin: 0 10px;
+}
+
+.top-header ul li a {
+    margin: 0 10px;
+    color: var(--basic-color);
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.top-header ul li a:hover {
+    color: var(--secondary-color);
+    transition: 0.3s;
+    border-bottom: var(--secondary-color) solid;
+
+}
+
+.top-header {
+    color: var(--secondary-color);
+    padding-bottom: 4px;
+    transition: all 0.3s;
+    border-bottom: 2px;
+}
+
+.top-header .order-btn {
+    background-color: #f09e36;
+    padding: 10px 30px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+.top-header .order-btn:hover {
+    color: var(--basic-color);
+    border-bottom: var(--basic-color);
+}
+
+.book-section {
+    background-color: #446738;
+    padding: 80px 100px;
+    min-height: calc(100vh - 80px);
+}
+
+.book-section .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.book-info img {
+    width: 350px;
+    margin-right: 20px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.book-description {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.book-description h2 {
+    font-family: 'Irish Grover', system-ui;
+    color: #f1f1f1;
+    font-size: 54px;
+    margin-left: 50px;
+}
+
+.book-description p {
+    color: #f1f1f1;
+    font-size: 32px;
+    font-family: 'Irish Grover', system-ui;
+    margin-left: 50px;
+}
+
+.recommendation-section {
+    width: 100%;
+    padding: 50px 0;
+    background-color: #faf2db;
+}
+
+.recommendation-section .container-recommendation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 25px;
+    text-align: center;
+    width: 100%;
+    padding: 0 80px;
+    font-family:Arial, Helvetica, sans-serif
+}
+
+.container-secondpage {
+    max-width: 1000px;
+    margin: 0 auto;
+
+}
+
+.illustration-section .container-secondpage {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.illustration-section .container-secondpage p {
+    font-size: 53px;
+    font-family: 'Irish Grover', system-ui;
+}
+
+.illustration-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #9eaf8a;
+    padding: 150px 0;
+    min-height: 100vh;
+}
+
+.illustration img {
+    display: flex;
+    width: 500px;
+}
+
+.illustration_paragraph {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;;
+    font-size: 24px;
+    color: #2b2b2b;
+}
+
+.order-form-section {
+    background-color: #446738;
+    padding: 100px 0;
+    text-align: center;
+    min-height: calc(100vh - 38.5px);
+}
+
+.order-form-section h3 {
+    color: var(--primary-color);
+    padding-bottom: 20px;
+    font-family: 'Irish Grover', system-ui;
+    font-size: 25px; 
+}
+
+.order-form-section .container > div {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+}
+
+.order-form-section .container {
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.order-form-section .container p {
+    display: flex;
+    justify-content: center;
+    font-size: 47px;
+    font-family:Arial, Helvetica, sans-serif;
+  
+}
+
+.order-form-section .container .footer-line {
+   padding: 20px 0;
+}
+
+.order-form-section .container .footer-line span {
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+form {
+    display: inline-block;
+    background-color: #f9f3e7;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-size: 18px;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #556a4b;
+    border-radius: 5px;
+}
+
+.form-field .order-btn {
+    background-color: #f09e36;
+    padding: 15px 25px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+
+.form-field .order-btn:hover {
+    background-color: #bc8122;
+    color: var(--primary-color);
+    transition: 0.3s;
+}
+
+.top-header .order-btn:hover {
+    background-color: var(--basic-color);
+    color: var(--secondary-color);
+    transition: 0.3s;
+}
+
+.container-footer {
+    padding: 10px 10px;
+    background-color: #faf2db;
+    display: flex;
+    justify-content: center;
+    font-family:Arial, Helvetica, sans-serif;
+}
